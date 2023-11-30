@@ -1,45 +1,46 @@
 package apuntado;
+import java.util.List;
 
-public class Paquete {
-    private String descripcion;
-    private int precio;
-    private int idPaquete;
-    private int cantidadFichas;
+public class Partida {
+    private int idPartida;
+    private int montoApostadoPartida;
+    private Jugador ganadorPartida;
+    private List<Ronda> rondas;
+    private List<Jugador> jugadores;
+    private int puntajePartida;
+    private boolean estadoPartida;
+    private boolean cartasCustom;
+    
+    
 
-    public Paquete() {
-        this.descripcion = null;
-        this.precio = 0;
-        this.idPaquete = 0;
-        this.cantidadFichas = 0;
+    public Partida(int idPartida, int montoApostadoPartida) {
+        this.idPartida = idPartida;
+        this.montoApostadoPartida = montoApostadoPartida;
+        this.ganadorPartida = null;
+        this.rondas = null;
+        this.jugadores = null;
+        this.puntajePartida = 0;
+        this.estadoPartida = false;
+        this.cartasCustom = false;
     }
 
-    public Paquete(String descripcion, int precio, int cantidadFichas) {
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.cantidadFichas = cantidadFichas;
+    public void tocarCarta() {
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public void recogerCarta() {
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public boolean abandonarPartida() {
+        return false;
     }
 
-    public int getPrecio() {
-        return precio;
+    public void soltarCarta() {
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public void añadirJugador() {
     }
 
-    public int getCantidadFichas() {
-        return cantidadFichas;
-    }
-
-    public void setCantidadFichas(int cantidadFichas) {
-        this.cantidadFichas = cantidadFichas;
+    public void bajarCartas() {
     }
 }
+
