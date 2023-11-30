@@ -9,8 +9,8 @@ public class gestor_base {
     public static void main(String[] args) {
         // Configuración de la conexión
         String url = "jdbc:mysql://localhost:3306/bdcartas";
-        String usuario = "Santi";
-        String contraseña = "ago";
+        String usuario = "Santiago";
+        String contraseña = "hola123";
 
         // Datos del nuevo jugador
         String nombre = "NuevoJugador";
